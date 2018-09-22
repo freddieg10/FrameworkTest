@@ -22,3 +22,7 @@ e) Las tablas comenzaran con el prefijo tb (ejemplo: tbInfo)
 f) Los plugins no llevaran prefijo y seran escritos en minusculas (ejemplo: datetimepicker) 
 
 g) Las llamadas ajax tendran como success variable name ('response') 
+
+h) Los checkboxes llevaran prefijo chk
+
+i) Los DDL llevaran prefijo slc
