@@ -21,3 +21,5 @@ mensaje de confirmacion de para borrar ("Esta seguro que desea borrar este regis
 validar campos para modal igual que los del formulario de la pagina principal
 
 mensaje de confirmacion de edicion ("Se ha editado este formulario exitosamente")
+
+modificar tabla para que sea responsive
