@@ -50,22 +50,161 @@
           </div>
           <div class="form-group">
             <label for="txtHora">Hora:</label>
-            <div class="input-append" id="datetimepicker1">
-                <input data-format="hh:mm:ss" class='datetimepicker' data-date-container='#datetimepicker1' type="text" />
-                <span class="add-on">
-                  <i data-time-icon="icon-time" data-date-icon="icon-calendar">
-                  </i>
-                </span>
-              </div>
+            <div class="input-group date" data-provide="datepicker">
+                <input type="text" class="form-control">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-time"></span>
+                </div>
+            </div>
           </div>
           <div class="form-group">
             <label for="txtFecha">Fecha:</label>
-            <input type="text" class="form-control" id="txtFecha">
+            <div class="input-group date" data-provide="datepicker">
+                <input type="text" class="form-control">
+                <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+            </div>
           </div>
+          <div class="form-group">
+            <div class="form-actions pull-right" style="margin-top: 3%">
+                <button class="btn" style="background:cornflowerblue; color:white">Agregar Información</button>
+            </div>
+         </div>
         </div>
+      </div>
+      <div class="row" style="margin-top:3%">
+          <div class="col-lg-12" style="padding: 8px 16px !important">
+              <table class="table-hover table-bordered table-responsive" style="width:100%">
+                  <tr>
+                    <th class="text-center"> ID </th>
+                    <th> Nombre </th>
+                    <th> Telefono </th>
+                    <th> Seguro </th>
+                    <th> Cédula </th>
+                    <th> Departamento </th>
+                    <th> Hora </th>
+                    <th> Fecha </th>
+                    <th class="text-center"> Operaciones </th>
+                  </tr>
+              <tbody>
+                <tr>
+                  <td class="text-center"> 1 </td>
+                  <td> Freddie Gonzalez </td>
+                  <td> (809) 620-2020</td>
+                  <td> 12345 (ARS) </td>
+                  <td> 001-0101001-1 </td>
+                  <td> Cardiología </td>
+                  <td> 5:00 PM </td>
+                  <td> 10/20/1995 </td>
+                  <td class="text-center"> 
+                   <span class="glyphicon glyphicon-edit edit" data-toggle="tooltip" title="Editar Información"></span>
+                     <span class="glyphicon glyphicon-remove" data-toggle="tooltip"  title="Borrar Información"></span>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="text-center"> 2 </td>
+                    <td> Pedro Rodriguez </td>
+                    <td> (809) 508-0000</td>
+                    <td> 1689 (Senasa) </td>
+                    <td> 001-0101121-1 </td>
+                    <td> Endoscopía </td>
+                    <td> 5:00 PM </td>
+                    <td> 10/04/1998 </td>
+                    <td class="text-center"> 
+                         <span class="glyphicon glyphicon-edit edit" data-toggle="tooltip" title="Editar Información"></span>
+                         <span class="glyphicon glyphicon-remove" data-toggle="tooltip" title="Borrar Información"></span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="text-center"> 3 </td>
+                      <td> Jorge Ramos </td>
+                      <td> (809) 420-0069 </td>
+                      <td> 12345 (Space Jam) </td>
+                      <td> 001-1111111-1 </td>
+                      <td> Urología </td>
+                      <td> 8:00 PM </td>
+                      <td> 6/4/1993 </td>
+                      <td class="text-center"> 
+                          <span class="glyphicon glyphicon-edit edit" data-toggle="tooltip" title="Editar Información"></span>
+                          <span class="glyphicon glyphicon-remove" data-toggle="tooltip" title="Borrar Información"></span>
+                        </td>
+                    </tr>
+              </tbody>
+            </table>
+          </div>
       </div>
     </div>
   </div>
+
+  <div class="modal fade bs-modal-lg" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">[Nombre de persona]</h4>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="txtNombre">Nombre:</label>
+                      <input type="text" class="form-control" id="txtNombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="txtTelefono">Teléfono:</label>
+                      <input type="text" class="form-control" id="txtTelefono">
+                    </div>
+                    <div class="form-group">
+                      <label for="txtSeguro">Seguro:</label>
+                      <input type="text" class="form-control" id="txtSeguro">
+                    </div>
+                    <div class="form-group">
+                      <label for="txtCedula">Cédula:</label>
+                      <input type="text" class="form-control" id="txtCedula">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="slcDepartamento">Departamento:</label> <br/>
+                      <select class="selectpicker" id="slcDepartamento" data-live-search="true">
+                        <option value="CARDIO">Cardiología</option>
+                        <option value="ENDO">Endoscopía</option>
+                        <option value="URO">Urología</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="txtHora">Hora:</label>
+                      <div class="input-group date" data-provide="datepicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-addon">
+                              <span class="glyphicon glyphicon-time"></span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="txtFecha">Fecha:</label>
+                      <div class="input-group date" data-provide="datepicker">
+                          <input type="text" class="form-control">
+                          <div class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                          </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" id="btnEditar" style="background:cornflowerblue; color:white">Editar</button>
+            <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -77,9 +216,14 @@
     $(document).ready(function () {
       $('.selectpicker').selectpicker();
 
-      $('.datetimepicker').datetimepicker({
-        pickDate: false,
-        container: '#datetimepicker1'
+      $('[data-toggle="tooltip"]').tooltip();   
+
+      $('.edit').click(function(){
+        $('#myModal').modal('show');
+      });
+
+      $('#btnEditar').click(function(){
+        $('#myModal').modal('hide');
       });
     });
   </script>
