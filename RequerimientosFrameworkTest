@@ -1,0 +1,23 @@
+Ningun campo puede entrar vacio al table, debe de tener validacion para esto
+
+Nombre debe validarse que solo sea texto
+
+Telefono debe validarse que solo sea numeros y que tenga mascara
+
+Seguro no puede venir vacio, puede ser alfanumerico pero no contener campos especiales
+
+Cedula con mascara y solo numeros
+
+Departamento no importa pq no hay valor vacio
+
+Hora debe de instanciarse con plugin, que solo eliga hora 12h con meridiano (PM/AM)
+
+Fecha debe de instanciarse con plugin, solo fecha en formato dd/MM/yyyy 
+
+mensaje de confirmacion de insercion a la tabla ("Se ha agregado este formulario exitosamente")
+
+mensaje de confirmacion de para borrar ("Esta seguro que desea borrar este registro?")
+
+validar campos para modal igual que los del formulario de la pagina principal
+
+mensaje de confirmacion de edicion ("Se ha editado este formulario exitosamente")
